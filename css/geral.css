@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rationale&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+:root {
+    --cor1: #FFFFFF;
+    --cor2: #2D364F;
+    --cor3: #41465D;
+    --cor4: #FF6910;
+    --cor4-gradiente: radial-gradient(circle, rgb(255, 139, 71) 40%, rgba(255,105,16,1) 100%);
+    --cor5: #000000;
+
+    --font-titulo: "Montserrat", serif;
+    --font-paraf: "Poppins";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: var(--cor2);
+    position: fixed;
+    
+}
+
+header > #nav-centro {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+header > #nav-centro > a {
+    color: white;
+    font-family: var(--font-paraf);
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0px 50px 0px 50px;
+    font-size: 1.5em;
+}
+
+header > #nav-centro > a > img {
+    height: 100px;
+    margin-bottom: -30px;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+header > #nav-lateral {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 0;
+}
+
+
+header > #nav-lateral > a > img{
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 20px 5px 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+#fake-header {
+    height: 100px;
+}
+
+main > section {
+    height: 100vh;
+}
+
+main > #section-about-me, main > #section-projects {
+    background: var(--cor4-gradiente);
+}
+
+main > #section-introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+main > #section-introduction > h1 {
+    line-height: 95px;
+    color: var(--cor4);
+    font-size: 7em;
+    font-family: var(--font-titulo);
+}
+
+main > #section-introduction > p {
+    color: var(--cor2);
+    font-weight: 600;
+    font-size: 1.3em;
+    font-family: var(--font-paraf);
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+main > #section-introduction > #links-contatos > a > img{
+    height: 30px;
+    width: 30px;
+    background-color: var(--cor2);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 50px 10px 50px;
+    margin: 30px 10px 10px 10px;
+}
+
+
+/*----------Sobre mim----------*/
+
+main > #section-about-me {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding-left: 50px;
+}
+
+main > #section-about-me > #text-about-me > h1 {
+    color: var(--cor1);
+    font-size: 6em;
+    font-family: var(--font-titulo);
+}
+
+main > #section-about-me > #text-about-me > p {
+    width: 750px;
+    color: var(--cor1);
+    text-align: left;
+    font-size: 1.3em;
+    line-height: 28px;
+}
+
+/*----------PROJETOS----------*/
+
+main > #section-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+main > #section-projects > h1 {
+    color: var(--cor1);
+    font-size: 5em;
+    font-family: var(--font-titulo);
+}
+
+main > #section-projects > #filtro-projetos > button {
+    background-color: var(--cor1);
+    border: none;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+main > #section-projects > #cards-projetos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+main > #section-projects > #cards-projetos > article {
+    background-color: var(--cor1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.404);
+    height: 300px;
+    width: 250px;
+    margin: 20px;
+    
+}
+
+main > #section-projects > #cards-projetos > article > div {
+    background: url(../imgs/cinemel.PNG) center center;
+    background-size: cover;
+    border-radius: 5px 5px 0px 0px;
+    height: 150px;
+    width: 100%;
+}
+
+main > #section-projects > #cards-projetos > article > h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
