@@ -21,15 +21,21 @@ var typed = new Typed('#element', {
 let projetoHTML = document.getElementsByClassName("projetos-html")
 let emBreve = document.getElementsByClassName("embreve")
 let todos = document.getSelection("article#embreve")
-const selecionarTodos = document.getElementById("select-html")
+const selecionarTodos = document.getElementById("select-todos")
 const selecionarHTML = document.getElementById("select-html")
-const buttonTodos = document.getSelection("button")
+
 
 
 function filtroTodos() {
     const maxEmBreve = Math.max(emBreve.length)
     for(let i = 0; i < maxEmBreve; i++) {
         if (i < maxEmBreve) {
+            selecionarTodos.style.border = '1px solid white'
+            selecionarTodos.style.background = 'var(--cor4)'
+            selecionarTodos.style.color = 'white'
+            selecionarHTML.style.border = 'none'
+            selecionarHTML.style.background = 'white'
+            selecionarHTML.style.color = 'black'
             emBreve[i].style.display = 'flex'
         }
     }
@@ -42,9 +48,9 @@ function filtroHTML() {
             selecionarHTML.style.border = '1px solid white'
             selecionarHTML.style.background = 'var(--cor4)'
             selecionarHTML.style.color = 'white'
-            selecionarHTML.style.border = '1px solid white'
-            selecionarHTML.style.background = 'var(--cor4)'
-            selecionarHTML.style.color = 'white'
+            selecionarTodos.style.border = 'none'
+            selecionarTodos.style.background = 'white'
+            selecionarTodos.style.color = 'black'
             emBreve[i].style.display = 'none'  
 
         }

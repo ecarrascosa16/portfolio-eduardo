@@ -149,7 +149,7 @@ main > #section-about-me > #text-about-me > p {
 /*----------PROJETOS----------*/
 
 main > #section-projects {
-    height: 1000px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -169,6 +169,7 @@ main > #section-projects > #filtro-projetos > button {
     width: 200px;
     margin: 20px;
     cursor: pointer;
+    border: 1px solid white;
     border-radius: 5px;
     font-size: 1.1em;
 }
