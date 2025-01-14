@@ -149,6 +149,7 @@ main > #section-about-me > #text-about-me > p {
 /*----------PROJETOS----------*/
 
 main > #section-projects {
+    height: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,41 +163,118 @@ main > #section-projects > h1 {
 }
 
 main > #section-projects > #filtro-projetos > button {
-    background-color: var(--cor1);
+    background-color: rgb(255, 255, 255);
     border: none;
     height: 50px;
     width: 200px;
     margin: 20px;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
 }
+
+main > #section-projects > #filtro-projetos > #select-todos {
+    background-color: var(--cor4);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
 
 main > #section-projects > #cards-projetos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
 
 }
 
 main > #section-projects > #cards-projetos > article {
+    display: flex;
+    flex-flow: row;
     background-color: var(--cor1);
     border-radius: 5px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.404);
-    height: 300px;
-    width: 250px;
-    margin: 20px;
-    
+    height: 200px;
+    width: 366px;
+    margin: 20px;   
 }
 
-main > #section-projects > #cards-projetos > article > div {
-    background: url(../imgs/cinemel.PNG) center center;
+main > #section-projects > #cards-projetos > article > div.capa-projeto {
+    background: url(../imgs/cinemel.PNG) left center;
     background-size: cover;
-    border-radius: 5px 5px 0px 0px;
-    height: 150px;
-    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    height: 100%;
+    width: 46%;
 }
 
-main > #section-projects > #cards-projetos > article > h1 {
+main > #section-projects > #cards-projetos > article > div.informacoes-projeto {
+    width: 55%;
+}
+
+main > #section-projects > #cards-projetos > article > div.informacoes-projeto > h1 {
     text-align: center;
     font-size: 1.5em;
-    padding: 15px;
+    padding: 10px 0px 5px 0px;
 }
 
+main > #section-projects > #cards-projetos > article > div.informacoes-projeto > p {
+    text-align: justify;
+    font-size: .8em;
+    padding: 0px 10px 15px 10px;
+}
+
+main > #section-projects > #cards-projetos > article > div.informacoes-projeto > .tags {
+    display: flex;
+    padding: 5px;
+}
+
+.tag-html {
+    background-color: hsla(12, 77%, 52%, 0.635);
+    margin: 5px;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+.tag-css {
+    background-color: #264ce4c2;
+    margin: 5px;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+.tag-js {
+    background-color: #f7de1eb2;
+    margin: 5px;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+.tag-java {
+    background-color: #007396b7;
+    margin: 5px;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+.tag-react {
+    background-color: #61dafbb9;
+    margin: 5px;
+    padding: 2px 3.5px 2px 3.5px;
+    font-size: 0.7em;
+    border-radius: 2px;
+}
+
+span {
+    transform: rotate(-45deg);
+    margin-left: 10px;
+}
+
+span > img {
+    height: 23px;
+    width: 23px;
+}
+
+#breve {
+    margin: auto;
+}
